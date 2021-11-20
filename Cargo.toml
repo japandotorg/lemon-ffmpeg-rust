@@ -1,0 +1,22 @@
+# upstream version : 0.3.8
+# ffmpeg version : 4.2.2
+
+[package]
+name = "lemon-ffmpeg"
+version = "1.0.0"
+authors = ["japandotorg <yash.kul69@gmail.com> (https://japandotorg.me)"]
+edition = "2021"
+keywords = ["lemon-ffmpeg", "video", "ffmpeg"]
+description = "Dynamic rust bindings for ffmpeg"
+license = "MIT"
+homepage = "https://github.com/japandotorg/lemon-ffmpeg-rust"
+repository = "https://github.com/japandotorg/lemon-ffmpeg-rust"
+readme = "README.md"
+exclude = []
+
+[dependencies]
+libc = "^0.2"
+
+[build-dependencies]
+bindgen = "0.51"
+cc = "1.0.46"
