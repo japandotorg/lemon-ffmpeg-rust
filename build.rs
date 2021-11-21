@@ -1,4 +1,4 @@
-use std::iter::FormIterator;
+use std::iter::FromIterator;
 use std::collections::HashSet;
 use std::path::PathBuf;
 use std::env;
