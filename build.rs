@@ -3,7 +3,7 @@ use std::collections::HashSet;
 use std::path::PathBuf;
 use std::env;
 
-/**
+/*
  * utils - environment
  */
 
@@ -33,7 +33,7 @@ fn has_env_var_with_value(s: &str, v: &str) -> bool {
         .unwrap_or(false)
 }
 
-/**
+/*
  * paths
  */
 
@@ -47,7 +47,7 @@ pub const LIBS: &[&str] = &[
     "swscale"
 ];
 
-/**
+/*
  * codegen
  *
  * See https://github.com/rust-lang/rust-bindgen/issues/687#issuecomment-450750547
@@ -66,7 +66,7 @@ impl bindgen::callbacks::ParseCallbacks for IgnoreMacros {
     }
 }
 
-/**
+/*
  * build pipeline
  */
 
@@ -88,7 +88,7 @@ fn build() {
         ]));
 
         if has_env_var_with_value("FF_DO_CODEGEN", "1") {
-            /**
+            /*
              * RUN
              */
             bindgen::Builder::default()
